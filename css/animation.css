@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   background-image: url(backg.jpg);
+   background-repeat: no-repeat;
+   background-size: 800px;
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+.cajapacman{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    height: 80vh;
+}
+
+.pacman{
+    position: relative;
+    animation: correpac 10s infinite;
+}
+
+@keyframes correpac{
+    0% {top: -100px; left: 0px; background;}
+    10% {top: 0px; left: 1200px; background;}
+    20% {top: 50px; left: 1200px; background;}
+    30% {top: 50px; left: 50px; background;}
+    40% {top: 100px; left: 50px; background;}
+    50% {top: 100px; left: 1200px; background;}
+    60% {top: 200px; left: 1200px; background;}
+    70% {top: 200px; left: 50px; background;}
+    80% {top: 300px; left: 50px; background;}
+    90% {top: 300px; left: 1200px; background;}
+    100% {top: -100px; left: 50px; background;}    
+}
